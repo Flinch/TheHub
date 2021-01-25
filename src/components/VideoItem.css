@@ -1,0 +1,26 @@
+.summary {
+	/*font-size: 80%;*/
+}
+
+.thumbnail {
+	max-width: 200px !important;
+}
+
+.video {
+	display: flex !important;
+	cursor: pointer;
+}
+
+.header h5 {
+	font-size: 13px;
+}
+
+.content {
+	position: relative;
+}
+
+@media only screen and (min-width: 1200px) {
+	.ui.container {
+		width: 1200px;
+	}
+}
