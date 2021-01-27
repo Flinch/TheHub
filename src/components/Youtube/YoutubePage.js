@@ -1,8 +1,8 @@
 import React from "react";
-import SearchBar from "../SearchBar";
+import SearchBar from "./SearchBar";
 import youtube from "../../api/youtube";
-import VideoList from "../VideoList";
-import VideoDetail from "../VideoDetail";
+import VideoList from "./VideoList";
+import VideoDetail from "./VideoDetail";
 
 class YoutubePage extends React.Component {
 	state = {

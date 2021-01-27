@@ -10,6 +10,7 @@ class SideBar extends React.Component {
   };
 
   onSelectedSite = (site) => {
+    this.setState({ sidebarOpen: false });
     this.props.onSelectedSite(site);
   };
 
@@ -18,15 +19,15 @@ class SideBar extends React.Component {
       <Sidebar
         sidebar={
           <div class="ui vertical labeled icon menu">
-            <a class="item" onClick={() => this.onSelectedSite("Twitter")}>
+            <a class="item" onClick={() => this.onSelectedSite("twitter")}>
               <i class="home icon"></i>
               Home
             </a>
-            <a class="item" onClick={() => this.onSelectedSite("Youtube")}>
+            <a class="item" onClick={() => this.onSelectedSite("youtube")}>
               <i class="block layout icon"></i>
               Topics
             </a>
-            <a class="item" onClick={() => this.onSelectedSite("Reddit")}>
+            <a class="item" onClick={() => this.onSelectedSite("reddit")}>
               <i class="smile icon"></i>
               Friends
             </a>

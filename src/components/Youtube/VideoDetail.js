@@ -1,4 +1,5 @@
 import React from "react";
+import decode from "decode-html";
 
 const VideoDetail = ({ video }) => {
 	if (!video) {
@@ -13,8 +14,8 @@ const VideoDetail = ({ video }) => {
 				<iframe title="video player" src={url} />
 			</div>
 			<div className="ui segment">
-				<h4 className="ui header">{video.snippet.title}</h4>
-				<p> {video.snippet.description} </p>
+				<h4 className="ui header">{decode(video.snippet.title)}</h4>
+				<p> {decode(video.snippet.description)} </p>
 			</div>
 		</div>
 	);

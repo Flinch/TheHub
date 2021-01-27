@@ -2,6 +2,7 @@ import React from "react";
 import "./VideoItem.css";
 import LastSeen from "./LastSeen";
 import Truncate from "react-truncate";
+import decode from "decode-html";
 
 const VideoItem = ({ video, onSelectedVideo }) => {
 	const truncate = (str) => {
@@ -22,7 +23,7 @@ const VideoItem = ({ video, onSelectedVideo }) => {
 			/>
 			<div class="content">
 				<div className="header">
-					<h5> {truncate(video.snippet.title)} </h5>
+					<h5> {decode(truncate(video.snippet.title))} </h5>
 				</div>
 
 				<div className="description summary">
