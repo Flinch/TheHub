@@ -19,17 +19,17 @@ class SideBar extends React.Component {
       <Sidebar
         sidebar={
           <div class="ui vertical labeled icon menu">
-            <a class="item" onClick={() => this.onSelectedSite("twitter")}>
-              <i class="home icon"></i>
-              Home
-            </a>
             <a class="item" onClick={() => this.onSelectedSite("youtube")}>
-              <i class="block layout icon"></i>
-              Topics
+              <i class="youtube icon"></i>
+              YouTube
             </a>
             <a class="item" onClick={() => this.onSelectedSite("reddit")}>
-              <i class="smile icon"></i>
-              Friends
+              <i class="reddit icon"></i>
+              Reddit
+            </a>
+            <a class="item">
+              <i class="twitter icon"></i>
+              Twitter
             </a>
           </div>
         }
