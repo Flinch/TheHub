@@ -4,7 +4,7 @@ import axios from "axios";
 import SearchBar from "./SearchBar";
 import RedditListings from "./RedditListings";
 import ExpandedPost from "./ExpandedPost";
-import RedditLogo from "./images/reddit-alien.png";
+import RedditLogo from "./images/reddit-alien.svg";
 import "./RedditListings.css";
 
 class RedditPage extends React.Component {
