@@ -6,6 +6,7 @@ import RedditListings from "./RedditListings";
 import ExpandedPost from "./ExpandedPost";
 import RedditLogo from "./images/reddit.png";
 import "./RedditListings.css";
+import Loader from "../Loader";
 
 class RedditPage extends React.Component {
 	state = { reddit_data: [], term: "", selectedPost: [] };
@@ -28,9 +29,16 @@ class RedditPage extends React.Component {
 		return;
 	};
 
+	setLoader = () => {
+		if (this.state.reddit_data.length == 0) {
+			return <Loader message="Loading Reddit Home" />;
+		}
+	};
+
 	render() {
 		return (
 			<div className="ui container">
+				{this.setLoader()}
 				<div
 					className="container reddit"
 					style={{ textAlign: "center" }}

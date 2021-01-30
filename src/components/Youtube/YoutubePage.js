@@ -5,6 +5,7 @@ import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 import YoutubeLogo from "./images/youtube.svg";
 import "./YoutubePage.css";
+import Loader from "../Loader";
 
 class YoutubePage extends React.Component {
 	state = {
@@ -42,10 +43,17 @@ class YoutubePage extends React.Component {
 		}
 	};
 
+	setLoader = () => {
+		if (!this.state.onFirstLoad && this.state.videos.length == 0) {
+			return <Loader />;
+		}
+	};
+
 	render() {
 		return (
 			<div>
 				<div className="ui container">
+					{this.setLoader()}
 					{this.YoutubeLogo()}
 					<SearchBar onTermSubmit={this.onTermSubmit} />
 					<div className="ui grid">
