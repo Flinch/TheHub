@@ -3,7 +3,7 @@ import decode from "decode-html";
 
 const VideoDetail = ({ video }) => {
 	if (!video) {
-		return <div> Loading... </div>;
+		return <div> </div>;
 	}
 
 	const url = `https://www.youtube.com/embed/${video.id.videoId}`;

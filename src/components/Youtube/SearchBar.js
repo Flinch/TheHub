@@ -17,11 +17,12 @@ class SearchBar extends React.Component {
 			<div className="search-bar ui segment">
 				<form onSubmit={this.onFormSubmit} className="ui form">
 					<div className="field">
-						<label> Video </label>
+						<label> Find something cool </label>
 						<input
 							type="text"
 							value={this.state.term}
 							onChange={this.onInputChange}
+							placeholder="car demolitions ..."
 						/>
 					</div>
 				</form>

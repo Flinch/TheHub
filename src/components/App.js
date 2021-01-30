@@ -3,6 +3,7 @@ import SideBar from "./SideBar";
 import YoutubePage from "./Youtube/YoutubePage";
 import TwitterPage from "./Twitter/TwitterPage";
 import RedditPage from "./Reddit/RedditPage";
+import ExpandedPost from "./Reddit/ExpandedPost";
 
 class App extends React.Component {
 	state = {
@@ -26,6 +27,8 @@ class App extends React.Component {
 			return <RedditPage />;
 		}
 	};
+
+	handleClose = () => this.setState({ setOpen: false });
 
 	render() {
 		return (
