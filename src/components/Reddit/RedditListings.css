@@ -22,6 +22,10 @@
 	margin-top: 25px;
 }
 
+.reddit {
+	margin: -35px !important;
+}
+
 .description {
 	font-size: 14px;
 }

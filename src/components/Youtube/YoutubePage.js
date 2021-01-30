@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 import youtube from "../../api/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
-import YoutubeLogo from "./images/YouTubeLogo.svg";
+import YoutubeLogo from "./images/youtube.svg";
 import "./YoutubePage.css";
 
 class YoutubePage extends React.Component {
