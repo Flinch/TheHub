@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "react-sidebar";
-import { Header, Icon, Image, Menu } from "semantic-ui-react";
 
 class SideBar extends React.Component {
   state = { sidebarOpen: false, userSite: "" };
@@ -18,17 +17,17 @@ class SideBar extends React.Component {
     return (
       <Sidebar
         sidebar={
-          <div class="ui vertical labeled icon menu">
-            <a class="item" onClick={() => this.onSelectedSite("youtube")}>
-              <i class="youtube icon"></i>
+          <div className="ui vertical labeled icon menu">
+            <a className="item" onClick={() => this.onSelectedSite("youtube")}>
+              <i className="youtube icon"></i>
               YouTube
             </a>
-            <a class="item" onClick={() => this.onSelectedSite("reddit")}>
-              <i class="reddit icon"></i>
+            <a className="item" onClick={() => this.onSelectedSite("reddit")}>
+              <i className="reddit icon"></i>
               Reddit
             </a>
-            <a class="item">
-              <i class="twitter icon"></i>
+            <a className="item" href="">
+              <i className="twitter icon"></i>
               Twitter
             </a>
           </div>
