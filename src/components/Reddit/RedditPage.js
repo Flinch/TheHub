@@ -4,6 +4,8 @@ import axios from "axios";
 import SearchBar from "./SearchBar";
 import RedditListings from "./RedditListings";
 import ExpandedPost from "./ExpandedPost";
+import RedditLogo from "./images/reddit-alien.png";
+import "./RedditListings.css";
 
 class RedditPage extends React.Component {
 	state = { reddit_data: [], term: "", selectedPost: [] };
@@ -29,6 +31,9 @@ class RedditPage extends React.Component {
 	render() {
 		return (
 			<div className="ui container">
+				<div className="container" style={{ textAlign: "center" }}>
+					<img src={RedditLogo} class="image-container" />
+				</div>
 				<SearchBar onSubmitTerm={this.onSubmitTerm} />
 				<RedditListings
 					reddit_data={this.state.reddit_data}

@@ -37,7 +37,11 @@ class SideBar extends React.Component {
         onSetOpen={this.onSetSidebarOpen}
         styles={{ sidebar: { background: "white" } }}
       >
-        <button onClick={() => this.onSetSidebarOpen(true)}>Sidebar</button>
+        <i
+          onClick={() => this.onSetSidebarOpen(true)}
+          style={{ margin: "10px", cursor: "pointer" }}
+          class="bars icon large"
+        ></i>{" "}
       </Sidebar>
     );
   }

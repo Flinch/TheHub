@@ -42,3 +42,8 @@
 .ui.modal > .actions {
 	text-align: center !important;
 }
+
+.image-container {
+	width: 200px;
+	text-align: center;
+}
