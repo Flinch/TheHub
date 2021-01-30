@@ -33,12 +33,11 @@ function ExpandedPost({ selectedPost }) {
 					target="_blank"
 					href={`https://reddit.com${selectedPost.data.permalink}`}
 				>
-					Take me there
+					View on Reddit
 				</Button>
 				<Button
 					content="Close"
 					labelPosition="right"
-					icon="x"
 					onClick={() => setOpen(false)}
 				/>
 			</Modal.Actions>

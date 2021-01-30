@@ -19,15 +19,15 @@ class SideBar extends React.Component {
         sidebar={
           <div className="ui vertical labeled icon menu">
             <a className="item" onClick={() => this.onSelectedSite("youtube")}>
-              <i className="youtube icon"></i>
+              <i className="youtube icon" style={{ color: "red" }}></i>
               YouTube
             </a>
             <a className="item" onClick={() => this.onSelectedSite("reddit")}>
-              <i className="reddit icon"></i>
+              <i className="reddit icon" style={{ color: "red" }}></i>
               Reddit
             </a>
-            <a className="item" href="">
-              <i className="twitter icon"></i>
+            <a className="item">
+              <i className="twitter icon" style={{ color: "#1DA1F2" }}></i>
               Twitter
             </a>
           </div>
