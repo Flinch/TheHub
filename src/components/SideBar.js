@@ -27,7 +27,7 @@ class SideBar extends React.Component {
               Reddit
             </a>
             <a className="item">
-              <i className="twitter icon" style={{ color: "#1DA1F2" }}></i>
+              <i className="twitter icon"></i>
               Twitter
             </a>
           </div>
