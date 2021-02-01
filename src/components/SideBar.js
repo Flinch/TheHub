@@ -28,7 +28,8 @@ class SideBar extends React.Component {
             </a>
             <a className="item">
               <i className="twitter icon"></i>
-              Twitter
+              Twitter <br />
+              (disabled)
             </a>
           </div>
         }
